@@ -24,6 +24,9 @@ Router0#
 ![CPT2](https://github.com/Lexacbr/Keepalived-hw/blob/master/img/cpt2.png)
 ![confr](https://github.com/Lexacbr/Keepalived-hw/blob/master/img/confr.png)
 ![showr](https://github.com/Lexacbr/Keepalived-hw/blob/master/img/show-r.png)
+
+И сам [файл](1/hsrp_advanced_hw.pkt)
+
 ------
 ### Задание 2
 - Запустите две виртуальные машины Linux, установите и настройте сервис Keepalived как в лекции, используя пример конфигурационного [файла](1/keepalived-simple.conf).
