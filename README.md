@@ -25,7 +25,7 @@ Router0#
 ![confr](https://github.com/Lexacbr/Keepalived-hw/blob/master/img/confr.png)
 ![showr](https://github.com/Lexacbr/Keepalived-hw/blob/master/img/show-r.png)
 
-И сам [файл](1/hsrp_advanced_hw.pkt)
+И сам [файл](1/hsrp_advanced_hw.pkt)для программы Cisco Packet Tracer
 
 ------
 ### Задание 2
