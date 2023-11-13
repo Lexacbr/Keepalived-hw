@@ -20,9 +20,10 @@ Router0(config-if)#exit
 Router0(config)#exit
 Router0# 
 ``` 
-![CPT](ссылка на скриншот 2)`
-![Название скриншота 2](ссылка на скриншот 2)`
-![Название скриншота 2](ссылка на скриншот 2)`
+![CPT](https://github.com/Lexacbr/Keepalived-hw/blob/master/img/cpt1.png)
+![CPT2](https://github.com/Lexacbr/Keepalived-hw/blob/master/img/cpt2.png)
+![confr](https://github.com/Lexacbr/Keepalived-hw/blob/master/img/confr.png)
+![showr](https://github.com/Lexacbr/Keepalived-hw/blob/master/img/show-r.png)
 ------
 ### Задание 2
 - Запустите две виртуальные машины Linux, установите и настройте сервис Keepalived как в лекции, используя пример конфигурационного [файла](1/keepalived-simple.conf).
