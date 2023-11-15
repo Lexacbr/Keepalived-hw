@@ -64,7 +64,36 @@ fi
 ![Создание конфига](https://github.com/Lexacbr/Keepalived-hw/blob/master/img/keep-conf-deb.png) ![Создание конфига](https://github.com/Lexacbr/Keepalived-hw/blob/master/img/keep-conf-ubu.png)
 
 ---
-4. 
+4. Делаем рестарт сервиса:
 
+```bash
+sudo systemctl restart keepalived
 
-![Название скриншота 2](ссылка на скриншот 2)
+```
+---
+5. Проверяем в браузере и видим, что первый сервер `192.168.0.103` откликается по плавающему IP-адресу `192.168.0.200`.
+
+![Проверка плав.IP](https://github.com/Lexacbr/Keepalived-hw/blob/master/img/200-103.png) 
+
+Видим, что к интерфейсу `enp0s3` был добавлен плавающий IP-дрес `192.168.0.200`
+
+![Проверка плав.IP](https://github.com/Lexacbr/Keepalived-hw/blob/master/img/ip-a-1s.png)
+
+Так же видим, что на втором сервере осутсвует дополнительный IP-адрес и есть только один `192.168.0.106`
+
+![Проверка плав.IP на BACKUP Server](https://github.com/Lexacbr/Keepalived-hw/blob/master/img/ip-a-2s.png)
+
+6. Теперь попробуем отключить сервис `keepalived` на первом сервере и проверим переключение между серверами.
+Вводим команду
+```bash
+sudo systemctl stop keepalived
+```
+и видим, что по IP-адресу `192.168.0.200` на первом сервере отображается начальная страница второго (BACKUP) сервера.
+
+![200-106](https://github.com/Lexacbr/Keepalived-hw/blob/master/img/200-106.png)
+
+Так же видим, что второй сервер получил плавающий IP-адрес и стал MASTER сервером
+
+![master](https://github.com/Lexacbr/Keepalived-hw/blob/master/img/master.png)
+
+------
