@@ -90,10 +90,10 @@ sudo systemctl stop keepalived
 ```
 и видим, что по IP-адресу `192.168.0.200` на первом сервере отображается начальная страница второго (BACKUP) сервера.
 
-![200-106](https://github.com/Lexacbr/Keepalived-hw/blob/master/img/200-106.png)
+![Переключение на 106](https://github.com/Lexacbr/Keepalived-hw/blob/master/img/switch-to-106.png)
 
 Так же видим, что второй сервер получил плавающий IP-адрес и стал MASTER сервером
-
+![200-106](https://github.com/Lexacbr/Keepalived-hw/blob/master/img/200-106.png)
 ![master](https://github.com/Lexacbr/Keepalived-hw/blob/master/img/master.png)
 
 ------
