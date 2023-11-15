@@ -39,6 +39,32 @@ Router0#
 
 ------
 ### Выполнение 2
+Что я делал:
+1. На имеющиеся две ВМ (Ubuntu и Debian) я установил сервера NGINX. Изменил название индекс-файла на index.html
+---
+![Установака NGINX](https://github.com/Lexacbr/Keepalived-hw/blob/master/img/nginx-inst-deb.png) ![Установака NGINX](https://github.com/Lexacbr/Keepalived-hw/blob/master/img/nginx-inst-ubu.png)
+
+---
+
+2. Создал скрипт проверяющий доступность порта и существование файла index.html
+---
+
+```bash
+#!/bin/bash
+if [[ $(ss -lntup | grep LISTEN | grep :80) ]] && [[ -f /var/www/html/index.html ]]; then
+        exit 0
+else
+        sudo systemctl stop keepalived
+fi
+```
+---
+
+3. Добавил конфигурационный файл в сервис keepalived
+---
+![Создание конфига](https://github.com/Lexacbr/Keepalived-hw/blob/master/img/keep-conf-deb.png) ![Создание конфига](https://github.com/Lexacbr/Keepalived-hw/blob/master/img/keep-conf-ubu.png)
+
+---
+4. 
 
 
-![Название скриншота 2](ссылка на скриншот 2)`
+![Название скриншота 2](ссылка на скриншот 2)
