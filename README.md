@@ -81,7 +81,7 @@ sudo systemctl restart keepalived
 
 Так же видим, что на втором сервере осутсвует дополнительный IP-адрес и есть только один `192.168.0.106`
 
-![Проверка плав.IP на BACKUP Server](https://github.com/Lexacbr/Keepalived-hw/blob/master/img/ip-a-2s.png)
+![Проверка плав.IP на BACKUP Server](https://github.com/Lexacbr/Keepalived-hw/blob/master/img/ip-2s.png)
 
 6. Теперь попробуем отключить сервис `keepalived` на первом сервере и проверим переключение между серверами.
 Вводим команду
